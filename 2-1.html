@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>2-1</title>
+	<style type="text/css"> 
+p {margin:0;font-size:12px;line-height:26px;} 
+</style> 
+<script type="text/javascript"> 
+function checkbox1(obj,cName) 
+{ 
+    var checkboxs = document.getElementsByName(cName); 
+    for(var i=0;i<checkboxs.length;i++){checkboxs[i].checked = obj.checked;} 
+} 
+</script> 
+</head>
+<body>
+	<!--點一下全選後所有checkbox 會全勾，再點一下會全部取消，禁止使用jquery-->
+	<input type="checkbox" name="all" onclick="checkbox1(this,'c')" />全選</p> 
+	1.桌子<input type="checkbox" name="c" value="desktop"></br>
+	2.椅子<input type="checkbox" name="c" value="chair"></br>
+	3.電視<input type="checkbox" name="c" value="tv"></br>
+	4.洗衣機<input type="checkbox" name="c" value="wash"></br>
+	5.廚房<input type="checkbox" name="c" value="kitchen"></br>
+	6.浴室<input type="checkbox" name="c" value="bathroom"></br>
+</body>
+</body>
+</html>
